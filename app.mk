@@ -201,3 +201,7 @@ tr:
 	../../rdk/rokudev/utilities/linux/bin/maketr
 	rm locale/en_US/translations.xml
 	p4 revert -a locale/.../translations.xml
+	
+debug: install
+	@echo "Connecting to telnet"
+	telnet $(ROKU_DEV_TARGET) 8085
