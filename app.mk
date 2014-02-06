@@ -53,7 +53,7 @@ else
 endif
 
 ifndef ZIP_EXCLUDE
-  ZIP_EXCLUDE= -x \*.pkg -x storeassets\* -x keys\* -x \*/.\*
+  ZIP_EXCLUDE= -x channel_logos\* -x dist\* -x *.git* -x \*.mk -x \*.pkg -x storeassets\* -x keys\* -x \*/.\*
 endif
 
 HTTPSTATUS = $(shell curl --silent --write-out "\n%{http_code}\n" $(ROKU_DEV_TARGET))
