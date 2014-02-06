@@ -31,11 +31,11 @@
 #    address of your Roku box. (e.g. export ROKU_DEV_TARGET=192.168.1.1.
 #    Set in your this variable in your shell startup (e.g. .bashrc)
 ##########################################################################  
-DISTREL = ../../dist
-COMMONREL = ../common
+DISTREL = dist
+COMMONREL = common
 SOURCEREL = ..
 
-ZIPREL = $(DISTREL)/apps
+ZIPREL = $(DISTREL)/zips
 PKGREL = $(DISTREL)/packages
 
 APPSOURCEDIR = source
